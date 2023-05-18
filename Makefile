@@ -29,7 +29,7 @@ run-circleci-local:
 	circleci local execute
 
 lint:
-	docker run --rm --interactive hadolint/hadolint < Dockerfile
+	hadolint Dockerfile
 	pylint --disable=R,C,W1203 demos/**/**.py
 
 all: install lint test
