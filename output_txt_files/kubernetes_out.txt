@@ -1,3 +1,11 @@
+phongnva@CVP00179608F:/mnt/c/Users/phongnva/OneDrive - FPT Software/System/Udacity/Cloud-DevOps/DevOps_Microservices/project-ml-microservice-kubernetes$ ./make_prediction.sh
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
+
 (.devops) phongnva@CVP00179608F:/mnt/c/Users/phongnva/OneDrive - FPT Software/System/Udacity/Cloud-DevOps/DevOps_Microservices/project-ml-microservice-kubernetes$ ./run_kubernetes.sh
 deployment.apps/project-devops-microservice created
 NAME                                          READY   UP-TO-DATE   AVAILABLE   AGE
