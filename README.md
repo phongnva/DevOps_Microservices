@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![phongnva](https://circleci.com/gh/phongnva/DevOps_Microservices.svg?style=svg)](https://app.circleci.com/pipelines/github/phongnva/DevOps_Microservices)
 
 ## Project Overview
 
