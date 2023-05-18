@@ -1,0 +1,31 @@
+(.devops) phongnva@CVP00179608F:/mnt/c/Users/phongnva/OneDrive - FPT Software/System/Udacity/Cloud-DevOps/DevOps_Microservices/project-ml-microservice-kubernetes$ ./run_kubernetes.sh
+deployment.apps/project-devops-microservice created
+NAME                                          READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/project-devops-microservice   0/1     1            0           1s
+
+NAME                                                     DESIRED   CURRENT   READY   AGE
+replicaset.apps/project-devops-microservice-775d6766c6   1         1         0       0s
+
+NAME                 TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+service/kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   16h
+
+NAME                                               READY   STATUS              RESTARTS   AGE
+pod/project-devops-microservice-775d6766c6-lqqjh   0/1     ContainerCreating   0          0s
+error: unable to forward port because pod is not running. Current status=Pending
+
+(.devops) phongnva@CVP00179608F:/mnt/c/Users/phongnva/OneDrive - FPT Software/System/Udacity/Cloud-DevOps/DevOps_Microservices/project-ml-microservice-kubernetes$ ./run_kubernetes.sh
+error: failed to create deployment: deployments.apps "project-devops-microservice" already exists
+NAME                                          READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/project-devops-microservice   1/1     1            1           4m28s
+
+NAME                                                     DESIRED   CURRENT   READY   AGE
+replicaset.apps/project-devops-microservice-775d6766c6   1         1         1       4m27s
+
+NAME                 TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+service/kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   16h
+
+NAME                                               READY   STATUS    RESTARTS   AGE
+pod/project-devops-microservice-775d6766c6-lqqjh   1/1     Running   0          4m27s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
